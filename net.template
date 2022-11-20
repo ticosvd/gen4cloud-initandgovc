@@ -1,0 +1,13 @@
+network:
+  ethernets:
+    ens192:
+      dhcp4: false 
+      set-name: ens192
+      addresses: [172.17.1.LASTOCTET/24]  
+      nameservers: 
+        addresses: [8.8.8.8]
+      routes:
+        - to: default
+          via: 172.17.1.254
+  version: 2
+

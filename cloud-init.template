@@ -1,0 +1,18 @@
+#cloud-config
+chpasswd:
+    list: |
+      ubuntu:PASSWORD
+    expire: false
+users:
+  - default
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: sudo
+    shell: /bin/bash
+write_files:
+- encoding: b64
+  content: NETCONTENT 
+  path: /etc/netplan/52-cloud-init.yaml
+runcmd:
+- netplan apply
+

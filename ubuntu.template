@@ -1,0 +1,42 @@
+{
+  "DiskProvisioning": "flat",
+  "IPAllocationPolicy": "dhcpPolicy",
+  "IPProtocol": "IPv4",
+  "PropertyMapping": [
+    {
+      "Key": "instance-id",
+      "Value": "id-ovf"
+    },
+    {
+      "Key": "hostname",
+      "Value": "NODENAME"
+    },
+    {
+      "Key": "seedfrom",
+      "Value": ""
+    },
+    {
+      "Key": "public-keys",
+      "Value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHVfpqN4tcnMZIi4M97Kt4YuvWGAvex1HRRMwmvwJ2EmtApYkP1x5LFBhIacrFiUeqVKjZOVWO/BXrMyaj/Wb25+3Xkm/XoLbAGFtFFsqaxXrYV4w61e0yUo5g43zkY8PO3UXow4Fy2MgMPWTl/AwO+YkJmw2USO64XMxqVnc+YbUryPMsIL4wd2QTTM8jE5n7gm/ZGIP+p53nsqE9K/SsjLKS4t+ezcLcS3jf9n+VhbcJCTntMkeCDlhfINZyJg4lcG74FG/qgUC+WD2FeO8N9T1shzuRHFIACUtEzhSSFcdKXCM51biaE5K+pH0AFbO86jPA+l5NZRovcpqHzZC9 troot@maclaren"
+    },
+    {
+      "Key": "user-data",
+      "Value": "USERDATA"
+    },
+    {
+      "Key": "password",
+      "Value": "test"
+    }
+  ],
+  "NetworkMapping": [
+    {
+      "Name": "VM Network",
+      "Network": "MANAGEMENT172.17.1.0"
+    }
+  ],
+  "MarkAsTemplate": false,
+  "PowerOn": false,
+  "InjectOvfEnv": false,
+  "WaitForIP": false,
+  "Name": "NODENAME"
+}
